@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Nested Tables</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+        }
+        table, td {
+            margin: auto;
+            border-collapse: collapse;
+            border: 1px solid blue;
+            padding: 50px;
+            text-align: center;
+        }
+        .design {
+            border-collapse: collapse;
+            border-right: 1px solid black;
+            width: 100%; 
+        }
+
+        .tables {
+            border: 1px solid red;
+            padding: 10px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Sanoob</td>
+                <td>1240</td>
+                <td>
+                    <table class="design">
+                        <tr>
+                            <td>1data</td>
+                            <td>2data</td>
+                        </tr>
+                        <tr>
+                            <td>1data</td>
+                            <td>2data</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                   <table class="tables">
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                    <table class="tables">
+                        <tbody>
+                            <tr>
+                                <td>The New Table</td>
+                             </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Murthaza</td>
+                <td>123</td>
+                <td>Intern</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Karthik</td>
+                <td>153</td>
+                <td>Employee</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>Anas</td>
+                <td>2356</td>
+                <td>Employee</td>
+                <td>15000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
